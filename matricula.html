@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar fixed-top navbar-light bg-light ">
+        <a class="navbar-brand" href="#">
+            <h3>
+
+                Bienvenid@ Juan Lopez
+            </h3>
+            <div class="dropdown-divider"></div>
+
+        </a>
+        <span class="navbar-text">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal" >
+                <i class="material-icons" style="color: black; font-size: 30px; margin-right: 10px;">subject</i>
+            </button>
+
+            <button type="button" class="btn btn-primary" data-toggle="snackbar"
+            data-content="Presione el boton agregar en el curso que desea inscribirse, podra borrarlos en la lista si desea <a class='btn btn-primary btn-raised'>Entendido</a>"
+            data-html-allowed="true" data-timeout="0" >
+                <i class="material-icons" style="color: black; font-size: 30px; margin-right: 10px;">info</i>
+            </button>
+
+            <a href="index.html">
+                <button type="button" class="btn btn-primary">
+                    <i class="material-icons" style="color: black; font-size: 30px;">power_settings_new</i>
+                </button>
+            </a>
+        </span>
+    </nav>
+
+    <div class="container">
+        <div style="width: 100%; height: 80px;">
+        </div>
+
+        <div class="curso row">
+            <div class="col-10">
+
+                <h3>Curso</h3>
+                <p>Profesor</p>
+                <div class="dropdown-divider"></div>
+                <small>Alumnos</small>
+            </div>
+            <div class="col-2 d-flex">
+                <button data-toggle="tooltip" data-placement="right" title="Inscribirse en este curso" type="button" class="btn btn-primary bmd-btn-fab m-auto">
+                    <i class="material-icons">add</i>
+                </button>
+            </div>
+        </div>
+
+     
+       
+
+
+
+    </div>
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel">Cursos inscritos</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-10">
+                            <h6>Curso</h6>
+                            <small>Profesor</small>
+                        </div>
+                        <div class="col-2 d-flex">
+                            <a class="m-auto">
+                                <i class="text-danger material-icons">delete</i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+
+                    <div class="row">
+                        <div class="col-10">
+                            <h6>Curso</h6>
+                            <small>Profesor</small>
+                        </div>
+                        <div class="col-2 d-flex">
+                            <a class="m-auto">
+                                <i class="text-danger material-icons">delete</i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/FezVrasta/snackbarjs/1.1.0/dist/snackbar.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+        integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () { $('body').bootstrapMaterialDesign(); });
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+    </script>
+</body>
+
+</html>

@@ -4,4 +4,4 @@ Maqueta de una página de inicio para una aplicación web para una matricula de 
 ## Requisitos
 Este proyecto fué hecho en la versión básica de Vue.js no es necesario instalar ningún programa.
  
- Link aquí(https://patrickspace.github.io/Maqueta-de-Matricula/)
+ Link [aquí](https://patrickspace.github.io/Maqueta-de-Matricula/)
